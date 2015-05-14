@@ -1,0 +1,93 @@
+
+```
+Glipper-Lite - GTK Clipboard manager
+====================================
+
+Copyright (C) 2006 Sven Rech
+
+
+Introduction
+============
+
+Glipper-Lite is a clipboard manager similar to KDE's Klipper, or Ditto for 
+Windows.  It is an old-fashioned system tray icon which provides a history of 
+text copied to the X11 clipboard and primary selection.
+
+Other clipboard managers you may be interested in include glippy (C#), diodon 
+(requires libappindicator, but can run in a traditional systray), parcellite, 
+parcellite3 (old gtk3 port), ClipIt (parcellite fork), gpaste (GNOME), 
+wmcliphist (windowmaker applet), qlipper (QT)), gcm (GNOME clipboard manager - 
+old and broken), anamnesis (PyGTK), CopyQ (Qxt), pastie (GNOME)... personally 
+my favourite is ClipIt.  Many "Desktop Environments" also include their own 
+clipboard manager.
+
+Glipper-Lite only depends on GTK+ 2 and NOT on GNOME libs, so you can also use 
+it with any other window manager or panel that supports tray icons.
+
+This is a continuation of the classic C version of Glipper.  The original 
+Glipper project moved to Python long ago, first as a GNOME panel applet, and 
+later as an "appindicator".  It is now found at https://launchpad.net/glipper.
+
+Project website : http://code.google.com/p/glipper-lite/
+
+
+Installation Manual
+===================
+
+The best solution for installing Glipper-Lite, if you are using a GNU/Linux, BSD or
+other distribution, is to use your software management system. If you cannot
+install Glipper-Lite with your system management software you can compile it from
+sourcecode.
+
+
+Dependencies
+------------
+
+To use Glipper-Lite you must have these libraries installed on your system :
+
+	gtk+
+
+You must also have a freedesktop compliant notification area or system tray
+running.
+
+
+Compilation and installation
+----------------------------
+
+The first step is to compile the source code. Decompress the source archive if
+you have not already done so.
+
+Open a terminal and CD to the directory where your source code is, then type :
+
+	./configure
+	make
+
+Once the compilation has finished, you may install the software (root access
+needed). Run as root:
+
+	make install
+
+
+uninstallation
+--------------
+
+To uninstall (as root):
+
+	make uninstall
+
+
+Notes
+=====
+
+By default, Glipper-Lite will install under /usr, if you want to install it 
+elsewhere, such as in /usr/local, or ~/glipper, run configure with the 
+--prefix=<path> option.
+
+
+See also
+========
+
+See the COPYING file for licence information.
+See ChangeLog for information on new features.
+See INSTALL for advanced installation instructions.
+```
